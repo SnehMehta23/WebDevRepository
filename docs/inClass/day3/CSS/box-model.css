@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: lightpink;
+
+
+}
+
+.box{
+    width: 10vw;
+    height: 10vw;
+    background-color: darkslategray;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+    border: 3px solid yellow;
+    margin: 20px;
+
+    left: 20px;
+    top: 20px;
+    
+    display: inline-block;
+}
+
+.small{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: orange;
+
+
+}

@@ -1,0 +1,47 @@
+CSS
+    Display - inline vs block display of content
+        -inline-block, none, flex
+    Positioning
+    Box Model
+    Sizing
+    Typography
+
+    Block level elements
+
+    "Document Flow"
+    things are not gonna be where you want them to be in CSS
+
+    If somethign is static it is currently part of the document flow
+
+    positioning absolutely
+    top:
+    left:
+    right:
+    bottom:
+    
+    fixed positioning stays on your screen " used for situations like when on a website and something directs u back to the top in the bottom right corner as an exmaple
+
+    * wildcard literally everything in html document apply this to it
+
+    collapsing margins*
+
+    Sizing Units
+    pixels are absolute values
+    percentages 
+    ems - get to next week
+    rems -- get to next week
+    vw view width
+    vh view height
+
+    responsive web design - responding to the different browser changes 
+
+    16 pixels is default font size and so is serif
+
+    Typography
+
+    1 em is 16 pixels
+    2 em is 32 pixels
+
+    ems are relative to a font size set by a parent element
+
+
