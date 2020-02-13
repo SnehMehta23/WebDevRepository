@@ -15,7 +15,7 @@ h1{
     width: 100%;
     height: 80px;
     display: block;
-    background-color: #101010;
+    background-color: #26282B;
 }
 
 .inner_header{
@@ -32,7 +32,7 @@ h1{
 }
 
 .logo_container h1{
-    color: white;
+    color: #5F85DB;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -52,7 +52,7 @@ h1{
 
 .navigation a{
     height: 100%;
-    color: white;
+    color: #90B8F8;
     display: inline-table;
     vertical-align: middle;
     height: 100%;
