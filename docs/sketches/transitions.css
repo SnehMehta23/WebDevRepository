@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+    padding: 3vw;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: magenta;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transition-property: background-color, top;
+    transition-duration: 2s, 10s;
+    transition-timing-function: cubic-bezier(.15,1.13,1,-0.41); */
+}
+
+.box:hover{
+    background-color: aquamarine;
+    top: 25%;
+}
+
+.trigger{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.trigger:hover > .box{
+    transition-property: background-color, top;
+    transition-duration: 2s, 10s;
+    transition-timing-function: cubic-bezier(.15,1.13,1,-0.41);
+}

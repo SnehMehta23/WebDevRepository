@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+    padding: 3vw;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: magenta;
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    animation: move-right;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-right{
+    0%{left: 0px; top: 25%; border-radius: 0px}
+    50%{left: 400px; top: 600px; border-radius: 30px}
+    70%{left: 400px; top: 600px; border-radius: 60px}
+    75%{left: 200px; top: 600px; border-radius: 80px}
+    100%{left: 800px; top: 600px; border-radius: 50px}
+}
