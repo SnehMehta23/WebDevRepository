@@ -9,6 +9,7 @@ h1 {
     font-family: 'Montserra', sans-serif;
     text-align: center;
     margin: 10px;
+    color: #5F85DB;
 }
 
 .header {
@@ -57,7 +58,7 @@ h1 {
     vertical-align: middle;
     height: 100%;
     padding: 30px 20px;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
 }
 
 .navigation a:hover {
@@ -70,5 +71,7 @@ h1 {
 
 a {
     padding: 20px;
-    color: darkblue;
+    font-family: 'Montserrat', sans-serif;
+    color: #26282B;
 }
+
