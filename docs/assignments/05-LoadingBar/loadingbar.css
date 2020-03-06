@@ -1,0 +1,34 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar{
+    height: 5px;
+    width: 200px;
+    border-radius: 25px;
+    background: lightgray;
+}
+
+.loaded{
+    height: 100%;
+    border-radius: 25px;
+    width: 100%;
+    background: #5F85DB;
+    animation: 10s linear infinite loading;
+    transform-origin: 0%;
+}
+
+@keyframes loading{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}
+
+/* add in a animation that I make?? ask Doug about it */
