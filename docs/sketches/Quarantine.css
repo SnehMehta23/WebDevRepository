@@ -219,40 +219,6 @@ nav {
   transform: translateY(0px);
 }
 
-.sidebar-anchor {
-  color: #FFF;
-  text-decoration: none;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 7px;
-}
-
-.sidebar-anchor:before {
-  content: "";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #FFF;
-  -webkit-transition: all .7s ease-in-out;
-  -moz-transition: all .7s ease-in-out;
-  -ms-transition: all .7s ease-in-out;
-  -o-transition: all .7s ease-in-out;
-  transition: all .7s ease-in-out;
-}
-
-.sidebar-anchor:hover:before {
-  width: 100%;
-}
-
-.ua {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-}
-
 @media (min-width: 480px) {
   .nav-list {
     display: block;
