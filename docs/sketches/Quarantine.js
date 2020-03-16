@@ -1,17 +1,19 @@
 $(document).ready(function() {
+
     function toggleSidebar() {
-        $(".button").toggleClass("active");
-        $("main").toggleClass("move-to-left");
-        $(".sidebar-item").toggleClass("active");
+      $(".button").toggleClass("active");
+      $("main").toggleClass("move-to-left");
+      $(".sidebar-item").toggleClass("active");
     }
-
+  
     $(".button").on("click tap", function() {
-        toggleSidebar();
+      toggleSidebar();
     });
-
+  
     $(document).keyup(function(e) {
-        if(e.keyCode === 27) {
-            toggleSidebar();
-        }
+      if (e.keyCode === 27) {
+        toggleSidebar();
+      }
     });
-});
+  
+  });
