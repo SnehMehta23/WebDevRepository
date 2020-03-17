@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+
 body,
 html {
   height: 100%;
@@ -6,47 +7,50 @@ html {
   margin: 0;
   font-family: 'Arimo', sans-serif;
 }
-a{
-    color: #fff;
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    width: 200px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    font-family: sans-serif;
-    letter-spacing: 0.1em;
+
+a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
 }
 
-a svg, a svg rect{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    fill: rgba(255, 255, 255, 0);
+a svg,
+a svg rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  fill: rgba(255, 255, 255, 0);
 }
 
-a svg rect{
-    stroke-width: 4;
+a svg rect {
+  stroke-width: 4;
 }
 
-a:hover{
-    color: #02feff;
-    text-shadow: 0px 0px 5px #02feff;
+a:hover {
+  color: #02feff;
+  text-shadow: 0px 0px 5px #02feff;
 }
 
-a:hover svg rect{
-    transition: 0.3s;
-    fill: transparent;
-    stroke-width: 4;
-    stroke: #02feff;;
-    stroke-dasharray: 40 160 40 20;
-    stroke-dashoffset: 20;
+a:hover svg rect {
+  transition: 0.3s;
+  fill: transparent;
+  stroke-width: 4;
+  stroke: #02feff;
+  ;
+  stroke-dasharray: 40 160 40 20;
+  stroke-dashoffset: 20;
 }
 
 main {
@@ -69,7 +73,7 @@ main {
   z-index: 1;
   right: 0;
   background-color: #000;
-  
+
 }
 
 .bar {
@@ -162,7 +166,7 @@ nav {
 .sidebar-list {
   padding: 0;
   margin: 0;
-  display:flex;
+  display: flex;
   flex-direction: column;
   list-style: none;
   position: relative;
@@ -231,13 +235,16 @@ nav {
   .nav-right {
     position: absolute;
   }
+
   .hidden-xs {
     display: block;
   }
+
   .visible-xs {
     display: none;
   }
 }
+
 body {
   background: black;
   color: #02feff;
@@ -498,81 +505,104 @@ body {
   0% {
     transform: rotateZ(0deg);
   }
+
   100% {
     transform: rotateZ(360deg);
   }
 }
+
 @keyframes rotate_anti {
   0% {
     transform: rotateZ(360deg);
   }
+
   100% {
     transform: rotateZ(0deg);
   }
 }
+
 @keyframes colour_ease {
   0% {
     border-color: #02feff;
   }
+
   50% {
     border-color: rgba(2, 254, 255, 0.5);
   }
+
   100% {
     border-color: #02feff;
   }
 }
+
 @keyframes flicker {
   0% {
     box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
+
   40% {
     box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
+
   50% {
     box-shadow: 0px 0px 16px 6px rgba(150, 255, 255, 0.5), inset 0px 1px 100px 2px rgba(21, 211, 233, 0.3);
   }
+
   60% {
     box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
+
   100% {
     box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
 }
+
 @keyframes flicker2 {
   0% {
     box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
+
   40% {
     box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
+
   50% {
     box-shadow: 0px 0px 50px 17px rgba(150, 255, 255, 0.5), inset 0px 1px 100px 2px rgba(21, 211, 233, 0.3);
   }
+
   60% {
     box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
+
   100% {
     box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5), inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
   }
 }
+
 @keyframes big_flicker {
   0% {
     box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5), inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
   }
+
   40% {
     box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5), inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
   }
+
   50% {
     box-shadow: 0px 0px 35px 17px rgba(150, 255, 255, 0.5), inset 0px 1px 50px 40px rgba(21, 211, 233, 0.3);
   }
+
   60% {
     box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5), inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
   }
+
   100% {
     box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5), inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
   }
 }
-html, body {
+
+html,
+body {
   height: 100%;
 }
 
@@ -648,13 +678,16 @@ ul {
   0% {
     background: #02feff;
   }
+
   50% {
     background: rgba(2, 254, 255, 0.3);
   }
+
   100% {
     background: #02feff;
   }
 }
+
 .marks li:first-child {
   transform: rotate(6deg) translateY(125px);
 }
@@ -894,64 +927,76 @@ ul {
 .marks li:nth-child(60) {
   transform: rotate(360deg) translateY(125px);
 }
-/* body{
-    padding: 0;
-    margin: 0;
-  }
-  .socials{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;    
-  }
-  .btn{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    background: #f1f1f1;
-    margin: 5px;
-    border-radius: 30%;
-    box-shadow: 0 5px 15px -5px #00000070;
-    color: #00ed14;
-    overflow: hidden;
-    position: relative;
-  }
-  .btn i{
-    line-height: 90px;
-    font-size: 26px;
-    transition: 0.2s linear;
-  }
-  .btn:hover i{
-    transform: scale(1.3);
-    color: #f1f1f1;
-  }
-  .btn::before{
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    background: #00ed14;
-    transform: rotate(45deg);
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.socials {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 5px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #00ed14;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn i {
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.btn:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #00ed14;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0% {
     left: -110%;
     top: 90%;
   }
-  .btn:hover::before{
-    animation: aaa 0.7s 1;
+
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+
+  100% {
     top: -10%;
     left: -10%;
   }
-  @keyframes aaa {
-    0%{
-      left: -110%;
-      top: 90%;
-    }50%{
-      left: 10%;
-      top: -30%;
-    }100%{
-      top: -10%;
-      left: -10%;
-    }
-  } */
+}
