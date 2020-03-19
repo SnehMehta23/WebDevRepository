@@ -58,21 +58,22 @@ main {
   position: relative;
   height: 100%;
   background-color: #000;
-  -webkit-transition: transform .7s ease-in-out;
+ /* -webkit-transition: transform .7s ease-in-out;
   -moz-transition: transform .7s ease-in-out;
   -ms-transition: transform .7s ease-in-out;
   -o-transition: transform .7s ease-in-out;
-  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out; */
 }
 
 .sidebar {
   height: 100%;
-  width: 400px;
+  width: 600px;
   position: fixed;
   top: 0;
   z-index: 1;
   right: 0;
   background-color: #000;
+  align-content: flex-start
 
 }
 
@@ -176,53 +177,12 @@ nav {
 
 .sidebar-item {
   margin: 30px 0;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
   -o-transform: translateY(-20px);
   transform: translateY(-20px);
-}
-
-.sidebar-item:first-child {
-  -webkit-transition: all .7s .2s ease-in-out;
-  -moz-transition: all .7s .2s ease-in-out;
-  -ms-transition: all .7s .2s ease-in-out;
-  -o-transition: all .7s .2s ease-in-out;
-  transition: all .7s .2s ease-in-out;
-}
-
-.sidebar-item:nth-child(2) {
-  -webkit-transition: all .7s .4s ease-in-out;
-  -moz-transition: all .7s .4s ease-in-out;
-  -ms-transition: all .7s .4s ease-in-out;
-  -o-transition: all .7s .4s ease-in-out;
-  transition: all .7s .4s ease-in-out;
-}
-
-.sidebar-item:nth-child(3) {
-  -webkit-transition: all .7s .6s ease-in-out;
-  -moz-transition: all .7s .6s ease-in-out;
-  -ms-transition: all .7s .6s ease-in-out;
-  -o-transition: all .7s .6s ease-in-out;
-  transition: all .7s .6s ease-in-out;
-}
-
-.sidebar-item:last-child {
-  -webkit-transition: all .7s .8s ease-in-out;
-  -moz-transition: all .7s .8s ease-in-out;
-  -ms-transition: all .7s .8s ease-in-out;
-  -o-transition: all .7s .8s ease-in-out;
-  transition: all .7s .6s ease-in-out;
-}
-
-.sidebar-item.active {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  -o-transform: translateY(0px);
-  transform: translateY(0px);
 }
 
 @media (min-width: 480px) {
@@ -937,16 +897,15 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 100%;
+  width: 50%;
   text-align: center;
-  display: flex;
-  flex-direction: row;
+  
 }
 
 .btn {
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 45px;
+  height: 45px;
   background: #f1f1f1;
   margin: 5px;
   border-radius: 30%;
@@ -954,12 +913,14 @@ body {
   color: #00ed14;
   overflow: hidden;
   position: relative;
+
 }
 
 .btn i {
-  line-height: 90px;
+  line-height: 45px;
   font-size: 26px;
   transition: 0.2s linear;
+ 
 }
 
 .btn:hover i {
@@ -998,5 +959,8 @@ body {
   100% {
     top: -10%;
     left: -10%;
+  }
+  clearFloat {
+    clear: both;
   }
 }
