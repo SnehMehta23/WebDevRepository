@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FormFills</title>
+    <link rel="stylesheet" href="formfills.css">
+    <title>Assignment6FormFills</title>
 </head>
+
 <body>
-    <div id="input-box">
+    <div class="container" id="poem-form">
         <h1>Create your poem here</h1>
+
+        <form>
+            <label for="poem-line" id="label">Poem Form Label</label><br>
+            <input type="text" name="input-text" id="input-text" value="type your text here"
+                formtarget="#my-button"><br>
+            <input type="button" id="my-button" value="submit line of poem">
+        </form>
     </div>
+
+    <div class="container" id="container">
+        <h1>Display your poem here</h1>
+        <p id="recent-line">Most recent line</p>
+        <p id="poem">Poetry will go here</p>
+    </div>
+    <script src="formfills.js"></script>
+
 </body>
+
 </html>
