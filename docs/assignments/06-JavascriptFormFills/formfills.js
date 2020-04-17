@@ -8,7 +8,7 @@ let myPoem = "";
 button.onclick = function() {
     let poemLine = inputText.value;
 
-    recentLine.innerHTML = poemLine.toUpperCase();
+    recentLine.innerHTML = poemLine;
 
     myPoem+=poemLine + "<br>";
 

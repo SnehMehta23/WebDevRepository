@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#sketch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: (-50%, -50%); 
+}
