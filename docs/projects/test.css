@@ -20,7 +20,7 @@ html{
 }
 
 /* CSS which you need for blurred box */
-body{
+/* body{
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -31,13 +31,7 @@ font-family: Arial, Helvetica;
 letter-spacing: 0.02em;
 font-weight: 400;
 -webkit-font-smoothing: antialiased; 
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+} */
 
 .blurred-box{
 position: relative;
@@ -255,10 +249,10 @@ color: white;
 /* Filler Text Stuff */
 section
 {
-  padding: 50px;
+  padding: 175px;
   position: absolute;
-  top: 20%;
-  left: 35%;
+  margin-left: 35%;
+  
 }
 
 /* section h2
