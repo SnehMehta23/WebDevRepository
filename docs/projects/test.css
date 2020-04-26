@@ -88,6 +88,10 @@ margin-bottom: 15px;
 color: white;
 }
 
+.bio-text{
+  color: white;
+}
+
 #menuToggle
 {
   display: inline-block;
