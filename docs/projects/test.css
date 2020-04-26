@@ -2,9 +2,9 @@ body
 {
   margin: 0;
   padding: 0;
-  height: 100%vh;
+  height: 100%;
   
-  background: #232323;
+  background: #262626;
   /* color: #cdcdcd; */
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -34,7 +34,6 @@ body
 
 #menuToggle a:hover
 {
-  color:limegreen;
   /*color for hovering over the elements in the slid menu*/
 }
 
