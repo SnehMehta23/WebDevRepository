@@ -19,6 +19,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
+                
                 <!--unordered list is the menu and the list elements-->
                 <ul id="menu">
                     <a href="#">
@@ -41,10 +42,27 @@
                 </ul>
             </div>
         </nav>
-    </div>
     <!--the particle-js library background animation-->
-    <div id="particles-js"></div>
-            <script type="text/javascript" src="../lib/particles.js"></script>
-            <script type="text/javascript" src="../lib/app.js"></script>
+    <div id="particles-js">
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+            <section>
+                <h2>Testing Header and Filler Text</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptate assumenda iste modi consectetur ab unde fuga, quia alias blanditiis ratione sint accusantium ad praesentium expedita, adipisci quasi, ipsam impedit.</p>
+            </section>
+    </div>
+    <script type="text/javascript" src="../lib/particles.js"></script>
+    <script type="text/javascript" src="../lib/app.js"></script>
+
+
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function()
+    {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    </script>
 </body>
 </html>
