@@ -103,7 +103,6 @@ body
   /* what happens after you press the hamburger */
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #d4af37;
 }
 
 /* Hide the middle one to make a square */
@@ -113,10 +112,10 @@ body
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
+/* #menuToggle input:checked ~ span:nth-last-child(2)
 {
-  /* transform: rotate(-45deg) translate(0, -1px); */
-}
+  transform: rotate(-45deg) translate(0, -1px);
+} */
 
 #menu
 {
@@ -138,6 +137,30 @@ body
 {
   padding: 10px 0;
   font-size: 22px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-weight: 700;
+  font-size:26px;
+  text-transform:uppercase;
+  color: transparent;
+    background: linear-gradient(to left, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799);
+  background-size: 1000px 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#menu li:hover
+{
+  animation: bg 15s linear infinite;
+}
+
+@keyframes bg
+{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 10000px;
+  }
 }
 
 /*
@@ -150,6 +173,7 @@ body
   transform: none;
 }
 
+/* Filler Text Stuff */
 section
 {
   padding: 50px;
@@ -170,6 +194,8 @@ section p
   font-size: 1.2em;
   color: #fff;
 }
+
+/* Scroll Bar Stuff */
 ::-webkit-scrollbar
 {
   width: 0;
