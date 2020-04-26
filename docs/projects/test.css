@@ -1,23 +1,11 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
 body
 {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%vh;
   
-  /* make it look decent enough */
   background: #232323;
-  color: #cdcdcd;
+  /* color: #cdcdcd; */
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
@@ -26,72 +14,60 @@ body
     background: #262626;
 }
 
-
 #menuToggle
 {
   display: block;
   position: relative;
-  top: 50px;
+  top: 50px; /*top and left make the "menuToggle or the hamburger menu be positioned correctly in the corner"*/
   left: 50px;
-  
   z-index: 1;
-  
   -webkit-user-select: none;
-  user-select: none;
 }
 
 #menuToggle a
 {
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff; /* the color and transition color for the menu elements*/
   
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: limegreen;
+  /*color for hovering over the elements in the slid menu*/
 }
 
 
 #menuToggle input
 {
+  /* adding a input box that is hidden */
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
   top: -7px;
   left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
+  cursor: pointer; /* changes the cursor to a pointer for element selection */
+  opacity: 0; /* keeps it hidden */
+  z-index: 2; /* and place it over the hamburger which is z-index of 1 */
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span
 {
+  /*this is the hamburger menu icon */
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+  /* change this color of the hamburger to be a gradient rgb */
   background: #cdcdcd;
   border-radius: 3px;
-  
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
 }
 
 #menuToggle span:first-child
@@ -101,7 +77,7 @@ body
 
 #menuToggle span:nth-last-child(2)
 {
-  transform-origin: 0% 100%;
+  transform-origin: 0% 50%;
 }
 
 /* 
@@ -110,14 +86,13 @@ body
  */
 #menuToggle input:checked ~ span
 {
+  /* what happens after you press the hamburger */
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #ffffff;
 }
 
-/*
- * But let's hide the middle one.
- */
+/* Hide the middle one to make a square */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
@@ -129,13 +104,9 @@ body
  */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  /* transform: rotate(-45deg) translate(0, -1px); */
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu
 {
   position: absolute;
@@ -143,15 +114,12 @@ body
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
   /* background: #ededed;  white menu background*/
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -166,5 +134,7 @@ body
  */
 #menuToggle input:checked ~ ul
 {
+  /* make this slower and smoother */
+  /* maybe an animation? */
   transform: none;
 }
