@@ -32,6 +32,12 @@ letter-spacing: 0.02em;
 font-weight: 400;
 -webkit-font-smoothing: antialiased; 
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .blurred-box{
 position: relative;
