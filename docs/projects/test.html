@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="test.css">
+    <script src="../lib/jquery-3.5.0.min.js"></script>
     <title>Mehta's Realm</title>
 </head>
 
@@ -24,16 +25,16 @@
                     <li>Home</li>
                 </a>
                 <a href="#">
-                    <li>About</li>
+                    <li onclick="myFunction()">About</li>
                 </a>
                 <a href="#">
-                    <li>Portfolio</li>
+                    <li onclick="myFunction()">Portfolio</li>
                 </a>
                 <a href="#">
-                    <li>Socials</li>
+                    <li onclick="myFunction()">Socials</li>
                 </a>
                 <a href="#">
-                    <li>Email Me!</li>
+                    <li onclick="myFunction()">Email Me!</li>
                 </a>
             </ul>
         </div>
@@ -44,6 +45,7 @@
         <div id="progressbar"></div>
         <div id="scrollPath"></div>
 
+        <!--Centered Home Page Box-->
         <section>
             <div class="blurred-box ">
                 <div class="user-box">
@@ -56,6 +58,13 @@
     </div>  
     <script type="text/javascript" src="../lib/particles.js"></script>
     <script type="text/javascript" src="../lib/app.js"></script>
+
+    <script>
+        function myFunction() 
+        {
+          $(".blurred-box").toggle()
+        };
+    </script>
 
     <script type="text/javascript">
         let progress = document.getElementById('progressbar');
