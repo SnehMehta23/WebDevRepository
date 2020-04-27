@@ -3,24 +3,27 @@ body
   margin: 0;
   padding: 0;
   height: 100%;
-  
   background: #262626;
-  /* color: #cdcdcd; */
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
+html
+{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ParticleSystem Background */
 #particles-js
 {
   background: #262626;
   position: relative;
 }
+/* ParticleSystem Background */
 
-html{
-  width: 100vw;
-  height: 100vh;
-}
-
-.blurred-box{
+/* Home page centered box */
+.blurred-box
+{
 position: relative;
 width: 250px;
 height: 350px;
@@ -31,7 +34,8 @@ border-radius: 2px;
 overflow: hidden;
 }
 
-.blurred-box:after{
+.blurred-box:after
+{
 content: '';
 width: 300px;
 height: 300px;
@@ -47,18 +51,21 @@ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
 filter: blur(10px);
 }
 
-.user-box{
+.user-box
+{
 position: relative;
 margin-top: 50px;
 text-align: center;
 z-index: 1;
 }
-.user-box > *{
+.user-box > *
+{
 display: inline-block;
 width: 200px;
 }
 
-.user-icon{
+.user-icon
+{
 width: 100px;
 height: 100px;
 position: relative;
@@ -67,16 +74,20 @@ background-size: contain;
 background-image: url(../images/codebrackets.png);
 }
 
-.user-name{
+.user-name
+{
 margin-top: 15px;
 margin-bottom: 15px;
 color: white;
 }
 
-.bio-text{
+.bio-text
+{
   color: white;
 }
+/* Home Page Centered Box End */
 
+/* Invisible Input CheckBox */
 #menuToggle
 {
   display: inline-block;
