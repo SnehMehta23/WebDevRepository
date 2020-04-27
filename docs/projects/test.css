@@ -12,6 +12,7 @@ body
 #particles-js
 {
   background: #262626;
+  position: relative;
 }
 
 html{
@@ -225,9 +226,12 @@ color: white;
 /* Home Page Centered Card Formatting */
 section
 {
-  padding: 75px;
+  /* padding: 75px; */
   position: absolute;
-  margin-left: 35%;
+  /* margin-left: 35%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* Home Page Centered Card Formatting  End ^^ */
 
