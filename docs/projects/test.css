@@ -5,12 +5,7 @@ body
   height: 100%;
   background: #262626;
   font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
-html
-{
-  width: 100vw;
-  height: 100vh;
+  overflow: hidden;
 }
 
 /* ParticleSystem Background */
@@ -250,7 +245,7 @@ section
 
 
 /* Scroll Bar Stuff */
-::-webkit-scrollbar
+/* ::-webkit-scrollbar
 {
   width: 0;
 }
@@ -308,7 +303,7 @@ section
   height: 100%;
   background: linear-gradient(to top, #008aff,#00ffe7);
   filter: blur(30px);
-}
+} */
 /* Scroll Bar Stuff End ^^ */
 
 /*icons */

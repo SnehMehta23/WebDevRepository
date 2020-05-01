@@ -270,7 +270,7 @@ var pJS = function(tag_id, params){
     if(typeof(color.value) == 'object'){
 
       if(color.value instanceof Array){
-        var color_selected = color.value[Math.floor(Math.random() * pJS.particles.color.value.length)];
+        var color_selected = color.value  [Math.floor(Math.random() * pJS.particles.color.value.length)];
         this.color.rgb = hexToRgb(color_selected);
       }else{
         if(color.value.r != undefined && color.value.g != undefined && color.value.b != undefined){
