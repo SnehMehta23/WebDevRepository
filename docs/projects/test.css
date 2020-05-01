@@ -7,20 +7,6 @@ body
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-.footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3rem;
-  background: #262626;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  text-align: center;
-  position: sticky;
-}
-
 html
 {
   width: 100vw;
@@ -115,7 +101,6 @@ color: white;
 #menuToggle a
 {
   text-decoration: none;
-
 }
 
 #menuToggle input
@@ -195,6 +180,8 @@ color: white;
 /* Side Menu and its Elements Formatting */
 #menu
 {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
@@ -209,8 +196,9 @@ color: white;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
+#menu a
 {
+
   padding: 10px 0;
   font-size: 22px;
   font-family: "Avenir Next", "Avenir", sans-serif;
@@ -224,7 +212,7 @@ color: white;
   -webkit-background-clip: text;
 }
 
-#menu li:hover
+#menu a:hover
 {
   animation: bg 15s linear infinite;
 }
@@ -241,7 +229,7 @@ color: white;
 /* Side Menu and its Elements Formatting End ^^ */
 
 /* left slide in */
-#menuToggle input:checked ~ ul
+#menuToggle input:checked ~ #menu
 {
   /* make this slower and smoother */
   /* maybe an animation? */
@@ -323,11 +311,12 @@ section
 }
 /* Scroll Bar Stuff End ^^ */
 
-ul{
+/*icons */
+.social-icons{
   display: flex;
 }
 
-ul li{
+.social-icons a{
   position: relative;
   display: block;
   color: #666;
@@ -355,7 +344,7 @@ ul li{
   }
 }
 
-ul li:before{
+.social-icons a:before{
   position: absolute;
   content: '';
   top: 0;
@@ -369,12 +358,12 @@ ul li:before{
   transition: .5s;
 }
 
-ul li:hover:before{
+.social-icons a:hover:before{
   transform: scale(1.2);
   box-shadow: 0 0 15px #d35400;
 }
 
-ul li:hover{
+.social-icons a:hover{
   background: linear-gradient(to top, #008aff,#00ffe7);
   box-shadow: 0 0 15px linear-gradient(to top, #008aff,#00ffe7);
   text-shadow: 0 0 15px linear-gradient(to top, #008aff,#00ffe7);
