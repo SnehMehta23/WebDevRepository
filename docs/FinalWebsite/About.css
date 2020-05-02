@@ -1,0 +1,6 @@
+.box{
+    box-sizing: content-box;
+    background-color: #fff;
+    position: absolute;
+    margin: 100px 100px 100px 230px;
+}
