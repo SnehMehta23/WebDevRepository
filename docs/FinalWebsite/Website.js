@@ -1,14 +1,14 @@
 var insideAbout = false;
 
-// $(document).ready(function () {
-//     $(".image").click(modalPopout)
-//     $(".close").click(close);
-// });
+$(document).ready(function () {
+    $(".image").click(modalPopout)
+    $(".close").click(close);
+});
 
-//     function modalPopout() {
-//         $(".popout").css("display", "flex");
-//     }
+    function modalPopout() {
+        $(".popout").css("display", "flex");
+    }
 
-//     function close() {
-//         $(".popout").css("display", "none");
-//     }
+    function close() {
+        $(".popout").css("display", "none");
+    }

@@ -21,6 +21,7 @@ img{
     background: #fff;
     box-shadow: 0 0 15px rgba(0,0,0,.2);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 /* Container that all of the images are located in giving it a count of 4 colums */
@@ -57,6 +58,7 @@ img{
     margin: 5px;
     transform: rotate(45deg);
     font-size: 30px;
+    cursor: pointer;
 }
 
 /* Media queries for responsive screen sizes */
@@ -79,7 +81,7 @@ img{
 }
 
 /* Scroll Bar Stuff */
-/* ::-webkit-scrollbar
+::-webkit-scrollbar
 {
     width: 0;
 }
@@ -138,4 +140,4 @@ img{
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(30px);
-} */
+}

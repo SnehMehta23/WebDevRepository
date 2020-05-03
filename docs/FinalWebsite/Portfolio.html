@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,40 @@
     <link rel="stylesheet" href="Portfolio.css">
     <script src="../lib/jquery-3.5.0.min.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $('#header').load('Menu.html');
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function () {
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            };
+            $(".popout").hide();
+            $(".image2").click(modalPopout)
+            $(".close").click(close);
+
+            function modalPopout() {
+            $(".popout").css("display", "flex");
+            }
+
+        function close() {
+            $(".popout").css("display", "none");
+        }
         });
     </script>
     <title>Mehta's Portfolio - Gallery</title>
 </head>
+
 <body>
-    <!-- <div id="progressbar"></div>
-    <div id="scrollPath"></div> -->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
 
     <!--The header is the menu that is being brought in by jquery function-->
     <div id="header"></div>
     <!--This is the container that holds all of the images-->
     <div class="container">
         <img class="image" src="img/1.png">
-        <img class="image" src="img/2.png">
+        <img class="image2" src="img/2.png">
         <img class="image" src="img/3.png">
         <img class="image" src="img/4.png">
         <img class="image" src="img/5.png">
@@ -32,19 +51,12 @@
         <img class="image" src="img/7.png">
         <img class="image" src="img/8.png">
     </div>
-    
+
     <div class="popout">
         <div class="close">+</div>
         <p>Hey person disable your ad blocker</p>
-      </div>
+    </div>
 
-    <!-- <script type="text/javascript">
-        let progress = document.getElementById('progressbar');
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function(){
-            let progressHeight = (window.pageYOffset / totalHeight) * 100;
-            progress.style.height = progressHeight + "%";
-        }
-    </script> -->
 </body>
+
 </html>
