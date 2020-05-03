@@ -1,39 +1,47 @@
 /* Container for All of the cards */
-.cards-container{
-    display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 13%;
- }
-/* Hover over card */
- .card-container:hover{
-  -webkit-animation: bounce 1s;
-  animation: pulse 1s infinite;
+ /* Image styling */
+ body
+ {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   background: #262626;
+   font-family: "Avenir Next", "Avenir", sans-serif;
  }
 
- /* The styling for the card itself */
- .card {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    transition: transform 0.7s;
-    transform-style: preserve-3d;   
- }
+ .cards-container{
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: center;
+    /* margin: 13%; */
+    padding: 50px 235px 30px 210px;
+}
 
- /* Styling for the content inside of the card */
- .card-content
+.card{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  background: linear-gradient(to top, #262626,#00ffe7);
+  color: white;
+  animation: content 5s linear infinite;
+  box-shadow: 0 0 15px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  border: 3px solid #262626;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-content
  {
     text-align: center;
     border: 3px solid #262626;
     border-radius: 20px;
     overflow: hidden;
     color: white;
-    background: linear-gradient(to top, #262626,#00ffe7);
-    animation: content 5s linear infinite;
     position: absolute;
  }
 
- /* Animation keyframes for the rgb background */
  @keyframes content
 {
     0%,100%
@@ -45,4 +53,24 @@
       filter: hue-rotate(360deg);
     }
 }
+
+/* Container that all of the images are located in giving it a count of 4 colums */
+/* .container{
+  margin: 250px auto;
+} */
+
+
+@media screen and (max-width: 620px){
+  .cards-container{
+    padding: 250px 100px 30px 110px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .cards-container{
+    padding: 250px 30px 30px 30px;
+  }
+}
+
+/* padding: 50px 235px 30px 210px; */
 

@@ -27,9 +27,36 @@ img{
 .container{
     column-count: 4;
     max-width: 1000px;
-    margin: 180px auto;
+    margin: 250px auto;
     padding: 30px;
     box-shadow: 0 0 30px rgba(62, 198, 155, 0.55); 
+}
+
+.popout {
+    width: 20vw;
+    height: 25vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px 2px;
+    background-color: lightblue;
+}
+
+.close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 5px;
+    transform: rotate(45deg);
+    font-size: 30px;
 }
 
 /* Media queries for responsive screen sizes */
