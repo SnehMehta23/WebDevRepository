@@ -1,0 +1,21 @@
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+.container{
+    column-count: 4;
+    max-width: 1000px;
+    margin: 200px auto;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(62, 198, 155, 0.55); 
+}
