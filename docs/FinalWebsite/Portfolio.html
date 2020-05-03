@@ -19,11 +19,46 @@
                 progress.style.height = progressHeight + "%";
             };
             $(".popout").hide();
-            $(".image2").click(modalPopout)
+            $(".image1").click(function(){
+                $("p").text("This is text for my image 1");
+                modalPopout();
+            });
+            $(".image2").click(function(){
+                $("p").text("This is text for my image 2");
+                modalPopout();
+            });
+            $(".image3").click(function(){
+                $("p").text("This is text for my image 3");
+                modalPopout();
+            });
+            $(".image4").click(function(){
+                $("p").text("This is text for my image 4");
+                modalPopout();
+            });
+            $(".image5").click(function(){
+                $("p").text("This is text for my image 5");
+                modalPopout();
+            });
+            $(".image6").click(function(){
+                $("p").text("This is text for my image 6");
+                modalPopout();
+            });
+            $(".image7").click(function(){
+                $("p").text("This is text for my image 7");
+                modalPopout();
+            });
+            $(".image8").click(function(){
+                $("p").text("This is text for my image 8");
+                modalPopout();
+            });
+          
             $(".close").click(close);
 
             function modalPopout() {
+
             $(".popout").css("display", "flex");
+            event.preventDefault();
+
             }
 
         function close() {
@@ -42,19 +77,20 @@
     <div id="header"></div>
     <!--This is the container that holds all of the images-->
     <div class="container">
-        <img class="image" src="img/1.png">
+        <img class="image1" src="img/1.png">
         <img class="image2" src="img/2.png">
-        <img class="image" src="img/3.png">
-        <img class="image" src="img/4.png">
-        <img class="image" src="img/5.png">
-        <img class="image" src="img/6.png">
-        <img class="image" src="img/7.png">
-        <img class="image" src="img/8.png">
+        <img class="image3" src="img/3.png">
+        <img class="image4" src="img/4.png">
+        <img class="image5" src="img/5.png">
+        <img class="image6" src="img/6.png">
+        <img class="image7" src="img/7.png">
+        <img class="image8" src="img/8.png">
     </div>
+
 
     <div class="popout">
         <div class="close">+</div>
-        <p>Hey person disable your ad blocker</p>
+        <p></p>
     </div>
 
 </body>
