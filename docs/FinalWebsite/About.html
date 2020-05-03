@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,78 @@
     <link rel="stylesheet" href="Menu.css">
     <link rel="stylesheet" href="About.css">
     <link rel="stylesheet" href="Master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="../lib/jquery-3.5.0.min.js"></script>
+    <script src="../FinalWebsite/Website.js"></script>
     <script>
-        $(function() {
+        insideAbout = true;
+        $(function () {
             $('#header').load('Menu.html');
+            
         });
     </script>
+   
     <title>Mehta's Portfolio - About</title>
 </head>
+
 <body>
     <div id="header"></div>
 
-    <div class="box"></div>
+    <div class="cards-container">
+        <!--   First Card -->
+        <div class="card-container">
+            <div class="card">
+                    <div class="card-content">
+                        <h3>Sneh Mehta</h3>
+                        <h4> Currently @ Columbia College University in Chicago studying UX Design and Web Development
+                        </h4>
+                    </div>
+            </div>
+        </div>
 
+        <!--   Second Card -->
+        <div class="card-container">
+            <div class="card">
+                    <div class="card-content">
+                        <h3>Skills</h3>
+                        <h4>Programming Languages that I like to think I understand: HTML, CSS, C#, with a sprinkle of JS and Jquery</h4>
+                    </div>
+            </div>
+        </div>
 
+        <!--   Third Card -->
+        <div class="card-container">
+            <div class="card">
+                    <div class="card-content">
+                        <h3>Software and Applications</h3>
+                        <h4>-Visual Studio/VSCode<br>-Unity<br>-Adobe Photoshop<br>-Adobe Illustrator<br>-Git<br>-Canva
+                        </h4>
+                    </div>
+            </div>
+        </div>
+
+        <!--   Fourth Card -->
+        <div class="card-container">
+            <div class="card">
+                    <div class="card-content">
+                        <h3>Games I'm Playing Right Now</h3>
+                        <h4>-Valorant<br>-Terraria<br>-RainbowSix Siege<br>-Stardew Valley<br>-MinecraftRTX</h4>
+                    </div>
+            </div>
+        </div>
+
+        <!--   Fifth Card -->
+        <div class="card-container">
+            <div class="card">
+                    <div class="card-content">
+                        <h3>Inspiration Behind The Portfolio</h3>
+                        <h4> I wanted a place to show some great work I've done and bring some humor into it with making it RGB</h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    
 </body>
+
 </html>

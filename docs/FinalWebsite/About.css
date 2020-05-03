@@ -1,6 +1,42 @@
-.box{
-    box-sizing: content-box;
-    background-color: #fff;
+.cards-container{
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 13%;
+ }
+ .card-container:hover{
+  -webkit-animation: bounce 1s;
+  animation: pulse 1s infinite;
+ }
+ .card {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;   
+ }
+
+ .card-content
+ {
+    text-align: center;
+    border: 3px solid #262626;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(to top, #262626,#00ffe7);
+    animation: content 5s linear infinite;
     position: absolute;
-    margin: 100px 100px 100px 230px;
+ }
+
+ @keyframes content
+{
+    0%,100%
+    {
+      filter: hue-rotate(0deg);
+    }
+    50%
+    {
+      filter: hue-rotate(360deg);
+    }
 }
+
