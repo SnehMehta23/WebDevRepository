@@ -28,6 +28,24 @@ img{
     box-shadow: 0 0 30px rgba(62, 198, 155, 0.55); 
 }
 
+@media screen and (max-width: 1024px){
+    .container{
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        column-count: 1;
+    }
+}
+
 /* ::-webkit-scrollbar
 {
     width: 0;
