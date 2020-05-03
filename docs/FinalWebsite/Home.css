@@ -4,7 +4,6 @@
   background: #262626;
   position: relative;
 }
-/* ParticleSystem Background */
 
 /* Home page centered box */
 .blurred-box
@@ -70,7 +69,6 @@ color: white;
 {
   color: white;
 }
-/* Home Page Centered Box End */
 
 /* Home Page Centered Card Formatting */
 section
@@ -82,9 +80,8 @@ section
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* Home Page Centered Card Formatting  End ^^ */
 
-/*icons */
+/* Social icons */
 .social-icons{
     display: flex;
   }

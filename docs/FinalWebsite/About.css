@@ -1,13 +1,17 @@
+/* Container for All of the cards */
 .cards-container{
     display: flex;
       flex-direction: row;
       justify-content: center;
       margin: 13%;
  }
+/* Hover over card */
  .card-container:hover{
   -webkit-animation: bounce 1s;
   animation: pulse 1s infinite;
  }
+
+ /* The styling for the card itself */
  .card {
     width: 200px;
     height: 200px;
@@ -16,6 +20,7 @@
     transform-style: preserve-3d;   
  }
 
+ /* Styling for the content inside of the card */
  .card-content
  {
     text-align: center;
@@ -28,6 +33,7 @@
     position: absolute;
  }
 
+ /* Animation keyframes for the rgb background */
  @keyframes content
 {
     0%,100%
