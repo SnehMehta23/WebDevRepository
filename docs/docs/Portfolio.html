@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Menu.css">
     <link rel="shortcut icon" type="image/png" href="img/NeuralNetworkFavicon.png">
     <link rel="stylesheet" href="Portfolio.css">
-    <script src="../lib/jquery-3.5.0.min.js"></script>
+    <script src="../docs/lib/jquery-3.5.0.min.js"></script>
     <script>
         $(function () {
             $('#header').load('Menu.html');
@@ -19,51 +19,67 @@
                 progress.style.height = progressHeight + "%";
             };
             $(".popout").hide();
-            $(".image1").click(function(){
-                $("p").text("Professionaly presented Interface Analysis on soial media giant Twitter. (Made on Canva)");
+            $(".image1").click(function () {
+                $("p").text(
+                    "Professionaly presented Interface Analysis on soial media giant Twitter. (Made on Canva)"
+                    );
                 modalPopout();
             });
-            $(".image2").click(function(){
-                $("p").text("Social Media and Digital Strategies discovery and research document on local Indian fashion store Palkhi. Created professionaly on Canva");
+            $(".image2").click(function () {
+                $("p").text(
+                    "Social Media and Digital Strategies discovery and research document on local Indian fashion store Palkhi. Created professionaly on Canva"
+                    );
                 modalPopout();
             });
-            $(".image3").click(function(){
-                $("p").text("A presentation on my interpretation and a small amount of research - An Introduction to Quantum Programming");
+            $(".image3").click(function () {
+                $("p").text(
+                    "A presentation on my interpretation and a small amount of research - An Introduction to Quantum Programming"
+                    );
                 modalPopout();
             });
-            $(".image4").click(function(){
-                $("p").text("Self render of Sneh Mehta - (creator and architect of this website) created in Adobe Illustrator");
+            $(".image4").click(function () {
+                $("p").text(
+                    "Self render of Sneh Mehta - (creator and architect of this website) created in Adobe Illustrator"
+                    );
                 modalPopout();
             });
-            $(".image5").click(function(){
-                $("p").text("A paper on the ethical obligations of game makers and game players - an explanation and a breakdown.");
+            $(".image5").click(function () {
+                $("p").text(
+                    "A paper on the ethical obligations of game makers and game players - an explanation and a breakdown."
+                    );
                 modalPopout();
             });
-            $(".image6").click(function(){
-                $("p").text("An in-depth research paper on french leader Napoleon Bonaparte and what made him a good leader for the French people pre and post revolution.");
+            $(".image6").click(function () {
+                $("p").text(
+                    "An in-depth research paper on french leader Napoleon Bonaparte and what made him a good leader for the French people pre and post revolution."
+                    );
                 modalPopout();
             });
-            $(".image7").click(function(){
-                $("p").text("A representation of Gestalt principles and color theory in Adobe Illustrator using an image of the great architect of this webpage.");
+            $(".image7").click(function () {
+                $("p").text(
+                    "A representation of Gestalt principles and color theory in Adobe Illustrator using an image of the great architect of this webpage."
+                    );
                 modalPopout();
             });
-            $(".image8").click(function(){
-                $("p").text("A representation of Gestalt principles and color theory in Adobe Illustrator using an image of the great architect of this webpage.");
+            $(".image8").click(function () {
+                $("p").text(
+                    "A representation of Gestalt principles and color theory in Adobe Illustrator using an image of the great architect of this webpage."
+                    );
                 modalPopout();
             });
-          
+
             $(".close").click(close);
 
             function modalPopout() {
 
-            $(".popout").css("display", "flex");
-            event.preventDefault();
+                $(".popout").css("display", "flex");
+                event.preventDefault();
 
             }
 
-        function close() {
-            $(".popout").css("display", "none");
-        }
+            function close() {
+                $(".popout").css("display", "none");
+            }
         });
     </script>
     <title>Mehta's Portfolio - Gallery</title>

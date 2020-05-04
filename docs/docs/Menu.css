@@ -1,21 +1,19 @@
 /* Invisible Input CheckBox */
-#menuToggle
-{
+#menuToggle {
   display: inline-block;
   position: relative;
-  top: 50px; /*top and left make the "menuToggle or the hamburger menu be positioned correctly in the corner"*/
+  top: 50px;
+  /*top and left make the "menuToggle or the hamburger menu be positioned correctly in the corner"*/
   left: 50px;
   z-index: 1;
   -webkit-user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
 }
 
-#menuToggle input
-{
+#menuToggle input {
   /* adding a input box that is hidden */
   display: block;
   width: 40px;
@@ -23,14 +21,16 @@
   position: absolute;
   top: -7px;
   left: -5px;
-  cursor: pointer; /* changes the cursor to a pointer for element selection */
-  opacity: 0; /* keeps it hidden */
-  z-index: 2; /* and place it over the hamburger which is z-index of 1 */
+  cursor: pointer;
+  /* changes the cursor to a pointer for element selection */
+  opacity: 0;
+  /* keeps it hidden */
+  z-index: 2;
+  /* and place it over the hamburger which is z-index of 1 */
 }
 
 /*Hamburger Menu */
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -40,52 +40,48 @@
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
   /* change this color of the hamburger to be a gradient rgb */
-  background: linear-gradient(to top, #008aff,#00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
   animation: animate 5s linear infinite;
   filter: blur(10px)
 }
-@keyframes animate
-{
-    0%,100%
-    {
-      filter: hue-rotate(0deg);
-    }
-    50%
-    {
-      filter: hue-rotate(360deg);
-    }
+
+@keyframes animate {
+
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 50%;
 }
 
 /* Transform all the slices of hamburger into a diagonal abstract design */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked~span {
   /* what happens after you press the hamburger */
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
 }
 
 /* Hide the middle one to make a square */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /* Side Menu and its Elements Formatting */
-#menu
-{
+#menu {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -97,41 +93,38 @@
   list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-#menu a
-{
+#menu a {
   padding: 10px 0;
   font-size: 22px;
   font-family: "Avenir Next", "Avenir", sans-serif;
   font-weight: 700;
-  font-size:26px;
-  text-transform:uppercase;
+  font-size: 26px;
+  text-transform: uppercase;
   color: transparent;
-    background: linear-gradient(to left, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799);
+  background: linear-gradient(to left, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799);
   background-size: 1000px 100%;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-#menu a:hover
-{
+#menu a:hover {
   animation: bg 15s linear infinite;
 }
 
-@keyframes bg
-{
-  0%{
+@keyframes bg {
+  0% {
     background-position-x: 0;
   }
-  100%{
+
+  100% {
     background-position-x: 10000px;
   }
 }
 
 /* left slide in */
-#menuToggle input:checked ~ #menu
-{
+#menuToggle input:checked~#menu {
   transform: none;
 }

@@ -1,0 +1,131 @@
+/* ParticleSystem Background */
+#particles-js {
+  background: #262626;
+  position: relative;
+}
+
+/* Home page centered box */
+.blurred-box {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.blurred-box:after {
+  content: '';
+  width: 300px;
+  height: 300px;
+  background: inherit;
+  position: absolute;
+  left: -25px;
+  right: 0;
+  top: -25px;
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(10px);
+}
+
+.user-box {
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.user-box>* {
+  display: inline-block;
+  width: 200px;
+}
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(img/codebrackets.png);
+}
+
+.user-name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.bio-text {
+  color: white;
+}
+
+/* Home Page Centered Card Formatting */
+section {
+  /* padding: 75px; */
+  position: absolute;
+  /* margin-left: 35%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: .5s;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.social-icons a:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0.9);
+  transition: .5s;
+}
+
+.social-icons a:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+}
+
+.social-icons a:hover {
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  box-shadow: 0 0 15px linear-gradient(to top, #008aff, #00ffe7);
+  text-shadow: 0 0 15px linear-gradient(to top, #008aff, #00ffe7);
+}
