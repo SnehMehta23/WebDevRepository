@@ -1,6 +1,4 @@
-/* Container for All of the cards */
- /* Image styling */
- body
+body
  {
    margin: 0;
    padding: 0;
@@ -8,12 +6,9 @@
    background: #262626;
    font-family: "Avenir Next", "Avenir", sans-serif;
  }
-
- .cards-container{
-    /* display: flex; */
-    /* flex-direction: row; */
+/* Container for All of the cards */
+.cards-container{
     justify-content: center;
-    /* margin: 13%; */
     padding: 50px 235px 30px 210px;
 }
 
@@ -54,11 +49,6 @@
     }
 }
 
-/* Container that all of the images are located in giving it a count of 4 colums */
-/* .container{
-  margin: 250px auto;
-} */
-
 
 @media screen and (max-width: 620px){
   .cards-container{
@@ -71,6 +61,3 @@
     padding: 250px 30px 30px 30px;
   }
 }
-
-/* padding: 50px 235px 30px 210px; */
-

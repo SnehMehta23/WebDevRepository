@@ -7,7 +7,6 @@ body
   background: #262626;
 }
 
-/* Don't quite know what this does but sounds self explanatory */
 html{
     scroll-behavior: smooth;
 }
