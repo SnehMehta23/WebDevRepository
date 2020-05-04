@@ -79,6 +79,30 @@ img{
     }
 }
 
+@media screen and (max-width: 1325px){
+    .popout{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .popout{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-wdith: 575px){
+    .popout{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-wdith: 375px){
+    .popout{
+        width: 75vw;
+    }
+}
+
 /* Scroll Bar Stuff */
 ::-webkit-scrollbar
 {
