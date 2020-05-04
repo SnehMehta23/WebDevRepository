@@ -27,7 +27,7 @@ img{
 .container{
     column-count: 4;
     max-width: 1000px;
-    margin: 250px auto;
+    margin: 180px auto;
     padding: 30px;
     box-shadow: 0 0 30px rgba(62, 198, 155, 0.55); 
 }
@@ -46,8 +46,17 @@ img{
     align-items: center;
     
     border-radius: 10px;
-    box-shadow: 3px 4px 10px 2px;
-    background-color: lightblue;
+    /* box-shadow: 3px 4px 10px 2px; */
+    box-shadow: 0 0 30px rgba(62, 198, 155, 0.55);
+    background-color: #262626;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    color: rgba(62, 198, 155, 0.55);
+    justify-content: center;
 }
 
 .close{
@@ -57,7 +66,13 @@ img{
     margin: 5px;
     transform: rotate(45deg);
     font-size: 30px;
+    color: rgba(62, 198, 155, 0.55);
     cursor: pointer;
+}
+
+p{
+    color: rgba(62, 198, 155, 0.55);
+    text-align: center;
 }
 
 /* Media queries for responsive screen sizes */
